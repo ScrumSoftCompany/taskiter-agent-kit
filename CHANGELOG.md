@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.1
+
+- Expose version reporting in skill descriptions, document native shell reading on Windows and the daily session limit of 50.
+
 ## 2.1.0
 
 - Write brake after content from outside the team: the agent explains it, shares the confirmation link from prepare_operation and waits for the person instead of retrying.

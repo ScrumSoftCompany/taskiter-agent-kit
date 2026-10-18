@@ -1,4 +1,4 @@
-# Taskiter Agent Kit 2.1.0
+# Taskiter Agent Kit 2.1.1
 
 Skills, plugin and session hook for working on Taskiter tasks with Claude Code and Codex. People do the work with their own agent; Taskiter keeps the task, the agent session and the human review.
 
@@ -9,17 +9,21 @@ Skills, plugin and session hook for working on Taskiter tasks with Claude Code a
 
 ```
 claude plugin marketplace add https://github.com/ScrumSoftCompany/taskiter-agent-kit.git
+```
+
+```
 claude plugin install taskiter@taskiter
 ```
 
-Claude Code asks for the token when the plugin is enabled and keeps it in the system credential store. Offline: unpack the ZIP from Taskiter and run `claude plugin marketplace add ./taskiter-agent-kit`. Update: `claude plugin update taskiter@taskiter` or enable auto-update in `/plugin`, Marketplaces, taskiter. If you added the `taskiter` MCP server by hand before, remove it (`claude mcp remove taskiter`), otherwise the tools appear twice.
+Claude Code asks for the token when the plugin is enabled and keeps it in the system credential store. Update: `claude plugin update taskiter@taskiter` or enable auto-update in `/plugin`, Marketplaces, taskiter. If you added the `taskiter` MCP server by hand before, remove it (`claude mcp remove taskiter`), otherwise the tools appear twice.
 
 ## Codex
 
 1. Store the token without putting it in your shell history (see the install wizard in Taskiter for the exact commands for macOS, Linux and Windows PowerShell).
 2. `codex mcp add taskiter --url https://api.taskiter.com/api/v1/mcp --bearer-token-env-var TASKITER_TOKEN`
-3. Skills and hook: `codex plugin marketplace add https://github.com/ScrumSoftCompany/taskiter-agent-kit.git` and `codex plugin add taskiter@taskiter`, or copy `codex/.agents/skills` to your repository.
-4. Session end hook: copy `codex/hooks.json` to `~/.codex/hooks.json` (merge if you already have one) and trust it in `/hooks`.
+3. Add the GitHub marketplace: `codex plugin marketplace add https://github.com/ScrumSoftCompany/taskiter-agent-kit.git`.
+4. Install the skills and hook: `codex plugin add taskiter@taskiter`.
+5. Session end hook: copy `codex/hooks.json` to `~/.codex/hooks.json` (merge if you already have one) and trust it in `/hooks`.
 
 ## What the kit sends to Taskiter
 
