@@ -1,0 +1,3 @@
+[mcp_servers.taskiter]
+url = "https://api.taskiter.com/api/v1/mcp"
+bearer_token_env_var = "TASKITER_TOKEN"

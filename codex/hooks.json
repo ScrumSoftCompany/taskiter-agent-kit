@@ -1,0 +1,21 @@
+{
+  "hooks": {
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "mcp_tool",
+            "server": "taskiter",
+            "tool": "finish_agent_session",
+            "input": {
+              "clientSessionId": "${session_id}",
+              "clientWorkspace": "${cwd}",
+              "outcome": "client_exit"
+            },
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}

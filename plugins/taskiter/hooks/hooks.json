@@ -1,0 +1,22 @@
+{
+  "description": "Taskiter: close the agent session when Claude Code exits",
+  "hooks": {
+    "SessionEnd": [
+      {
+        "matcher": "prompt_input_exit|logout|clear|resume|other",
+        "hooks": [
+          {
+            "type": "mcp_tool",
+            "server": "plugin:taskiter:taskiter",
+            "tool": "finish_agent_session",
+            "input": {
+              "clientSessionId": "${session_id}",
+              "clientWorkspace": "${cwd}",
+              "outcome": "client_exit"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "taskiter": {
+      "type": "http",
+      "url": "${user_config.api_url}",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_token}"
+      }
+    }
+  }
+}
