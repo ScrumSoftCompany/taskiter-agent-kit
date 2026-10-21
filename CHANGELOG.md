@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.2.0
+
+- Ask about live tracking and billing at task start unless the person already chose; PMs and admins can correct ordinary time entries without a separate agent-time approval workflow.
+- Support billable, client-non-billable (employee paid), and fully non-billable live timers; verify the returned billing mode.
+
 ## 2.1.1
 
 - Expose version reporting in skill descriptions, document native shell reading on Windows and the daily session limit of 50.

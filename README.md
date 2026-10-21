@@ -1,4 +1,4 @@
-# Taskiter Agent Kit 2.1.1
+# Taskiter Agent Kit 2.2.0
 
 Skills, plugin and session hook for working on Taskiter tasks with Claude Code and Codex. People do the work with their own agent; Taskiter keeps the task, the agent session and the human review.
 

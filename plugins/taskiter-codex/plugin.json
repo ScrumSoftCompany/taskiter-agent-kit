@@ -1,6 +1,6 @@
 {
   "name": "taskiter",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Work on Taskiter tasks with your agent: specification, start, request human review, fix after review, split, daily summary and sprint planning. The agent never tracks your time on its own.",
   "author": {
     "name": "Taskiter",
