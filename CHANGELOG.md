@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.0.1
+
+- Explain how to read task attachments through native MCP image blocks and embedded binary resources, including client support limits and download fallback.
+
+## 3.0.0
+
+- Remove Taskiter task review gates, review queues, review tools and the review-fix skill.
+- Finish work through ordinary task statuses and finish_agent_session; retain explicit time choices and human confirmation for writes influenced by external content.
+
 ## 2.2.0
 
 - Ask about live tracking and billing at task start unless the person already chose; PMs and admins can correct ordinary time entries without a separate agent-time approval workflow.

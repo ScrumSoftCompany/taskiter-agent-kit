@@ -1,6 +1,6 @@
-# Taskiter Agent Kit 2.2.0
+# Taskiter Agent Kit 3.0.1
 
-Skills, plugin and session hook for working on Taskiter tasks with Claude Code and Codex. People do the work with their own agent; Taskiter keeps the task, the agent session and the human review.
+Skills, plugin and session hook for working on Taskiter tasks with Claude Code and Codex. People do the work with their own agent; Taskiter keeps the task, the agent session and the work summary.
 
 - MCP server: https://api.taskiter.com/api/v1/mcp
 - Create a personal access token (`tsk_...`) in Taskiter: Account, AI assistants. The token is never stored in these files.
