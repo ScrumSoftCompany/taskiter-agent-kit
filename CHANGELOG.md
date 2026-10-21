@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.1.0
+
+- Claude Code: document the required token step. `claude plugin install` in a terminal does not ask for the token; set it with `claude plugin configure taskiter@taskiter --values-stdin` (Claude Code 2.1.285 or later) from a hidden prompt, then check `claude mcp list` and open a new session.
+- Every skill first checks that the Taskiter MCP tools are available. If not, it says the server is not configured and shows the setup commands for Windows, macOS and Linux; it never asks for the token in chat.
+- Codex on macOS: the token prompt works in zsh (no `read -p`).
+- Start task: live time tracking starts first (when authorized), then open questions, a full plan reviewed and corrected by the agent and explicit acceptance by the person before any implementation (new rule 13).
+
 ## 3.0.1
 
 - Explain how to read task attachments through native MCP image blocks and embedded binary resources, including client support limits and download fallback.

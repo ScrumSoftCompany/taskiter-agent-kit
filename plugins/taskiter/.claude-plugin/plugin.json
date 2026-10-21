@@ -1,7 +1,7 @@
 {
   "name": "taskiter",
   "displayName": "Taskiter",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Work on Taskiter tasks with your agent: specification, start, finish, split, daily summary and sprint planning. The agent never tracks your time on its own.",
   "author": {
     "name": "Taskiter",

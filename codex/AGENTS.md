@@ -1,6 +1,6 @@
 # Taskiter
 
-This project tracks work in Taskiter (Agent Kit 3.0.1). The `taskiter` MCP server gives access to tasks, specifications and agent sessions.
+This project tracks work in Taskiter (Agent Kit 3.1.0). The `taskiter` MCP server gives access to tasks, specifications and agent sessions.
 
 - Before starting work on a task, follow `.agents/skills/taskiter-start-task/SKILL.md`.
 - When the work is done, follow `.agents/skills/taskiter-finish-task/SKILL.md` (it verifies the result and ends the agent session).
